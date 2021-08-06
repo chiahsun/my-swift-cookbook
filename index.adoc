@@ -1,0 +1,38 @@
+= My Swift Cookbook
+:source-highlighter: highlight.js 
+:source-language: swift 
+:icons: font
+ 
+
+
+== Property Wrapper
+
+Described in 
+
+* https://docs.swift.org/swift-book/LanguageGuide/Properties.html[Properties - Property Wrappers],
+* https://docs.swift.org/swift-book/ReferenceManual/Attributes.html[Attribtes - propertyWrapper] 
+
+**property wrapper** can be regarded as adding functionalities to declarations by annotating property names. 
+
+=== Declaration
+
+We use `@propertyWrapper` followed by struct to define a property wrapper.
+
+link:./PropertyWrapper.playground[PropertyWrapper.playground]
+
+[source]
+----
+@propertyWrapper   <1> 
+struct TwelveOrLess {  <2>
+    private var number = 0
+    var wrappedValue: Int {  <3>
+        get { return number }              <4>
+        set { number = min(newValue, 12) } <4>
+    }
+}
+----
+<1> We start the declaration with `@propertyWrapper`.
+<2> Then, we declare the struct with the wrapper name, e.g. `TwelveOrLess`.
+<3> The struct must have `wrappedValue` defined.
+<4> The getter and setter defines the behavior of the property wrapper.
+
