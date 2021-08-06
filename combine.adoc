@@ -1,6 +1,10 @@
 [#combine]
 == Combine
 
+Combine is a closed source framework developed by Apple Inc. for functional reactive programming.
+
+In Apple's term, it is "a unified, declarative API for processing values over time".
+
 Described in
 
 * https://developer.apple.com/videos/play/wwdc2019/722/[WWDC 2019 Introducing Combine]

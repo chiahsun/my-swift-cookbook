@@ -13,6 +13,8 @@
 		BEEFD80326BDBCA60045CE03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEEFD80226BDBCA60045CE03 /* Preview Assets.xcassets */; };
 		BEEFD80E26BDBCA60045CE03 /* CombineDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD80D26BDBCA60045CE03 /* CombineDemoTests.swift */; };
 		BEEFD81926BDBCA60045CE03 /* CombineDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD81826BDBCA60045CE03 /* CombineDemoUITests.swift */; };
+		BEEFD82726BDBF3C0045CE03 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD82626BDBF3C0045CE03 /* SignupView.swift */; };
+		BEEFD82926BDDCA60045CE03 /* InputRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD82826BDDCA60045CE03 /* InputRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		BEEFD81426BDBCA60045CE03 /* CombineDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CombineDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEFD81826BDBCA60045CE03 /* CombineDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineDemoUITests.swift; sourceTree = "<group>"; };
 		BEEFD81A26BDBCA60045CE03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEEFD82626BDBF3C0045CE03 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		BEEFD82826BDDCA60045CE03 /* InputRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				BEEFD7FF26BDBCA60045CE03 /* Assets.xcassets */,
 				BEEFD80426BDBCA60045CE03 /* Info.plist */,
 				BEEFD80126BDBCA60045CE03 /* Preview Content */,
+				BEEFD82626BDBF3C0045CE03 /* SignupView.swift */,
+				BEEFD82826BDDCA60045CE03 /* InputRowView.swift */,
 			);
 			path = CombineDemo;
 			sourceTree = "<group>";
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEEFD82926BDDCA60045CE03 /* InputRowView.swift in Sources */,
+				BEEFD82726BDBF3C0045CE03 /* SignupView.swift in Sources */,
 				BEEFD7FE26BDBCA50045CE03 /* ContentView.swift in Sources */,
 				BEEFD7FC26BDBCA50045CE03 /* CombineDemoApp.swift in Sources */,
 			);
