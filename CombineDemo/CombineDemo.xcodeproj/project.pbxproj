@@ -15,6 +15,8 @@
 		BEEFD81926BDBCA60045CE03 /* CombineDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD81826BDBCA60045CE03 /* CombineDemoUITests.swift */; };
 		BEEFD82726BDBF3C0045CE03 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD82626BDBF3C0045CE03 /* SignupView.swift */; };
 		BEEFD82926BDDCA60045CE03 /* InputRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD82826BDDCA60045CE03 /* InputRowView.swift */; };
+		BEEFD82B26BDEA5B0045CE03 /* TermsAndConditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD82A26BDEA5B0045CE03 /* TermsAndConditions.swift */; };
+		BEEFD82D26BDEA870045CE03 /* ToggleRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD82C26BDEA870045CE03 /* ToggleRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		BEEFD81A26BDBCA60045CE03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEEFD82626BDBF3C0045CE03 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		BEEFD82826BDDCA60045CE03 /* InputRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputRowView.swift; sourceTree = "<group>"; };
+		BEEFD82A26BDEA5B0045CE03 /* TermsAndConditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditions.swift; sourceTree = "<group>"; };
+		BEEFD82C26BDEA870045CE03 /* ToggleRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				BEEFD80126BDBCA60045CE03 /* Preview Content */,
 				BEEFD82626BDBF3C0045CE03 /* SignupView.swift */,
 				BEEFD82826BDDCA60045CE03 /* InputRowView.swift */,
+				BEEFD82A26BDEA5B0045CE03 /* TermsAndConditions.swift */,
+				BEEFD82C26BDEA870045CE03 /* ToggleRowView.swift */,
 			);
 			path = CombineDemo;
 			sourceTree = "<group>";
@@ -266,9 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEEFD82926BDDCA60045CE03 /* InputRowView.swift in Sources */,
+				BEEFD82B26BDEA5B0045CE03 /* TermsAndConditions.swift in Sources */,
 				BEEFD82726BDBF3C0045CE03 /* SignupView.swift in Sources */,
 				BEEFD7FE26BDBCA50045CE03 /* ContentView.swift in Sources */,
 				BEEFD7FC26BDBCA50045CE03 /* CombineDemoApp.swift in Sources */,
+				BEEFD82D26BDEA870045CE03 /* ToggleRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
