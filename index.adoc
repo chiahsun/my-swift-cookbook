@@ -9,14 +9,14 @@
 
 Described in 
 
-* https://docs.swift.org/swift-book/LanguageGuide/Properties.html[Properties - Property Wrappers],
-* https://docs.swift.org/swift-book/ReferenceManual/Attributes.html[Attribtes - propertyWrapper] 
+* https://docs.swift.org/swift-book/LanguageGuide/Properties.html[Properties - Property Wrappers]
+* https://docs.swift.org/swift-book/ReferenceManual/Attributes.html[Attributes - propertyWrapper] 
 
-**property wrapper** can be regarded as adding functionalities to declarations by annotating property names. 
+**Property wrapper** can be regarded as adding functionalities to properties by annotating properties with property wrapper names. We only need to define property wrapper once and the compiler would synthesize the code for us.
 
 === Declaration
 
-We use `@propertyWrapper` followed by struct to define a property wrapper.
+We can use `@propertyWrapper` followed by struct to define a property wrapper.
 
 link:./PropertyWrapper.playground[PropertyWrapper.playground]
 
@@ -24,15 +24,146 @@ link:./PropertyWrapper.playground[PropertyWrapper.playground]
 ----
 @propertyWrapper   <1> 
 struct TwelveOrLess {  <2>
-    private var number = 0
-    var wrappedValue: Int {  <3>
-        get { return number }              <4>
-        set { number = min(newValue, 12) } <4>
+    private var number = 0 <3>
+    var wrappedValue: Int {  <4>
+        get { return number }              <5>
+        set { number = min(newValue, 12) } <5>
     }
 }
 ----
 <1> We start the declaration with `@propertyWrapper`.
-<2> Then, we declare the struct with the wrapper name, e.g. `TwelveOrLess`.
-<3> The struct must have `wrappedValue` defined.
-<4> The getter and setter defines the behavior of the property wrapper.
+<2> Then, we declare the struct/class/enum with the wrapper name, e.g. `TwelveOrLess`.
+<3> The variable used should be declared as `private` to ensure that client can only access through `getter` and `setter` of the `wrappedValue`
+<4> The struct must have `wrappedValue` defined 
+<5> The getter and setter define the behavior of the property wrapper.
 
+
+=== Usage
+
+[source]
+----
+struct SmallRectangle {
+    @TwelveOrLess var height: Int
+    @TwelveOrLess var width: Int
+}
+
+var rectangle = SmallRectangle()
+
+rectangle.height = 10
+rectangle.width = 24
+
+print(rectangle.height, rectangle.width) // Prints: 10 12
+----
+
+=== Initialization
+
+[source]
+----
+@propertyWrapper
+struct SmallNumber {
+    private var number: Int
+    private var maximum: Int
+    
+    var wrappedValue: Int {
+        get { number }
+        set { number = min(newValue, maximum) }
+    }
+    
+    private static let default_maximum = 10
+    
+    init() { // <1>
+        number = 0
+        maximum = SmallNumber.default_maximum
+    }
+    
+    init(wrappedValue: Int) { // <2>
+        maximum = SmallNumber.default_maximum
+        number = min(wrappedValue, maximum)
+    }
+    
+    init(wrappedValue: Int, maximum: Int) { // <3>
+        self.maximum = maximum
+        number = min(wrappedValue, maximum)
+    }
+}
+
+struct SomeStruct {
+    // Use init()
+    @SmallNumber var a: Int      // <1>
+    
+    // Use init(wrappedValue:)
+    @SmallNumber var b = 20      // <2>
+    
+    // Use init(wrappedValue:maximum:)
+    @SmallNumber(maximum: 100) var c = 30                 // <3>
+    @SmallNumber(wrappedValue: 40, maximum: 200) var d    // <3>
+}
+
+var s = SomeStruct()
+print(s.a, s.b, s.c, s.d) // Prints: 0 10 30 40
+s.a = 500
+s.b = 500
+s.c = 500
+s.d = 500
+print(s.a, s.b, s.c, s.d) // Prints: 10 10 100 200
+----
+
+<1> The default initialization with no parameters.
+<2> The initialization with parameter to `wrappedValue`.
+<3> The initilization with parameters to `wrappedValue` and other custom properties. 
+
+=== Projected value (`$propertyWrapper`)
+
+For a property wrapper annotated property, we add a `$` before it as the **projected value** so it exposes another property for use.
+
+
+[source]
+----
+enum Size {
+    case small, medium, large
+}
+
+@propertyWrapper
+struct Vector {
+    private var x = 0.0
+    private var y = 0.0
+    
+    var wrappedValue: Double {
+        get { sqrt(pow(x, 2) + pow(y, 2)) }
+    }
+    
+    var projectedValue: Size { // <1>
+        get {
+            switch wrappedValue {
+            case _ where wrappedValue <= 5:
+                return Size.small
+            case _ where wrappedValue <= 13:
+                return Size.medium
+            default:
+                return Size.large
+            }
+        }
+    }
+    
+    init(x: Double, y: Double) {
+        self.x = x
+        self.y = y
+    }
+}
+
+struct AnotherStructure {
+    @Vector(x: 3, y: 4) var smallVector
+    @Vector(x: 5, y: 12) var mediumVector
+    @Vector(x: 7, y: 24) var largeVector
+}
+
+var anotherStructure = AnotherStructure()
+anotherStructure.smallVector   // 5
+anotherStructure.$smallVector  // small
+anotherStructure.mediumVector  // 13
+anotherStructure.$mediumVector // medium
+anotherStructure.largeVector   // 25
+anotherStructure.$largeVector  // large
+----
+
+<1> We define the projected value and the type doesn't need to be the same as the type of the wrapped property.
