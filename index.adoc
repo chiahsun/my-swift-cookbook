@@ -167,3 +167,15 @@ anotherStructure.$largeVector  // large
 ----
 
 <1> We define the projected value and the type doesn't need to be the same as the type of the wrapped property.
+
+'''
+
+We will take a look on the real usages of property wrappers, specifically for:
+
+* SwiftUI
+  * `@Binding`
+  * `@State`
+  * `@StateObject`
+  * `@ObservableObject`, `@ObservedObject`
+    * `@Published`
+  * `@EnvironmentObjet`
