@@ -15,6 +15,7 @@
 		BE4CEAC526BD638B000463FA /* PropertyWrapperDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4CEAC426BD638B000463FA /* PropertyWrapperDemoUITests.swift */; };
 		BE4CEAD326BD6F36000463FA /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4CEAD226BD6F36000463FA /* PlayerView.swift */; };
 		BE4CEAD526BD8624000463FA /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4CEAD426BD8624000463FA /* LibraryView.swift */; };
+		BEEFD7EE26BDACF70045CE03 /* LibraryView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD7ED26BDACF70045CE03 /* LibraryView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BE4CEAC626BD638B000463FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE4CEAD226BD6F36000463FA /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		BE4CEAD426BD8624000463FA /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		BEEFD7ED26BDACF70045CE03 /* LibraryView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				BE4CEAAD26BD638B000463FA /* Preview Content */,
 				BE4CEAD226BD6F36000463FA /* PlayerView.swift */,
 				BE4CEAD426BD8624000463FA /* LibraryView.swift */,
+				BEEFD7ED26BDACF70045CE03 /* LibraryView2.swift */,
 			);
 			path = PropertyWrapperDemo;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE4CEAD526BD8624000463FA /* LibraryView.swift in Sources */,
+				BEEFD7EE26BDACF70045CE03 /* LibraryView2.swift in Sources */,
 				BE4CEAD326BD6F36000463FA /* PlayerView.swift in Sources */,
 				BE4CEAAA26BD638A000463FA /* ContentView.swift in Sources */,
 				BE4CEAA826BD638A000463FA /* PropertyWrapperDemoApp.swift in Sources */,

@@ -1,8 +1,15 @@
 import SwiftUI
 
-class Book: ObservableObject {    // <1>
+// Identifiable is used for LibraryView2 ForEach
+class Book: ObservableObject, Identifiable {    // <1>
     @Published var title = "Harry Potter" // <2>
     let identifier = UUID()
+    
+    init() {
+    }
+    init(title: String) {
+        self.title = title
+    }
 }
 
 struct BookView: View {

@@ -318,3 +318,53 @@ struct LibraryView_Previews: PreviewProvider {
 <3> For the view, add `@ObservedObject` to your model variable.
 <4> Declare the model as `@StateObject` as the single source of truth for your model.
 
+=== `@EnvironmentObject`
+
+Describe in
+
+* https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app[Managing model data in your app]
+
+link:./PropertyWrapperDemo/PropertyWrapperDemo/PropertyWrapperDemoApp.swift[PropertyWrapperDemoApp.swift]
+
+[source]
+----
+@main
+struct PropertyWrapperDemoApp: App {
+    @StateObject var library = Library() // <1>
+    
+    var body: some Scene {
+        WindowGroup {
+            LibraryView2()
+                .environmentObject(library) // <2>
+        }
+    }
+}
+----
+
+<1> We declare the model annotated by `@StateObject` at the app level.
+<2> Pass to its ascendent views using `.environmentObject()`
+
+link:./PropertyWrapperDemo/PropertyWrapperDemo/LibraryView2.swift[LibraryView2.swift]
+
+[source]
+----
+struct LibraryView2: View {
+    @EnvironmentObject var library: Library // <1>
+    
+    var body: some View {
+        List(library.books) { book in
+            BookView(book: book)
+        }
+    }
+}
+
+struct LibraryView2_Previews: PreviewProvider {
+    static var previews: some View {
+        LibraryView2()
+            .environmentObject(Library()) // <2>
+    }
+}
+----
+
+<1> Use `@EnvironmentObject` annotation to get the passed property.
+<2> Also create the model and pass as the environment object for your preview.
