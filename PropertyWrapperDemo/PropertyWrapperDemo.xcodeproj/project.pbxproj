@@ -13,6 +13,7 @@
 		BE4CEAAF26BD638B000463FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4CEAAE26BD638B000463FA /* Preview Assets.xcassets */; };
 		BE4CEABA26BD638B000463FA /* PropertyWrapperDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4CEAB926BD638B000463FA /* PropertyWrapperDemoTests.swift */; };
 		BE4CEAC526BD638B000463FA /* PropertyWrapperDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4CEAC426BD638B000463FA /* PropertyWrapperDemoUITests.swift */; };
+		BE4CEAD326BD6F36000463FA /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4CEAD226BD6F36000463FA /* PlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		BE4CEAC026BD638B000463FA /* PropertyWrapperDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PropertyWrapperDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4CEAC426BD638B000463FA /* PropertyWrapperDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapperDemoUITests.swift; sourceTree = "<group>"; };
 		BE4CEAC626BD638B000463FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE4CEAD226BD6F36000463FA /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				BE4CEAAB26BD638B000463FA /* Assets.xcassets */,
 				BE4CEAB026BD638B000463FA /* Info.plist */,
 				BE4CEAAD26BD638B000463FA /* Preview Content */,
+				BE4CEAD226BD6F36000463FA /* PlayerView.swift */,
 			);
 			path = PropertyWrapperDemo;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE4CEAD326BD6F36000463FA /* PlayerView.swift in Sources */,
 				BE4CEAAA26BD638A000463FA /* ContentView.swift in Sources */,
 				BE4CEAA826BD638A000463FA /* PropertyWrapperDemoApp.swift in Sources */,
 			);

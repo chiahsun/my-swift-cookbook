@@ -170,12 +170,95 @@ anotherStructure.$largeVector  // large
 
 '''
 
-We will take a look on the real usages of property wrappers, specifically for:
+We will take a look on the practical usages of property wrappers, specifically for:
 
 * SwiftUI
-  * `@Binding`
-  * `@State`
-  * `@StateObject`
-  * `@ObservableObject`, `@ObservedObject`
-    * `@Published`
-  * `@EnvironmentObjet`
+** `@State`
+** `@Binding`
+** `@StateObject`
+** `@ObservableObject`, `@ObservedObject`
+*** `@Published`
+** `@EnvironmentObjet`
+
+=== `@State` 
+
+Described in
+
+* https://developer.apple.com/documentation/swiftui/state[@State]
+
+link:./PropertyWrapperDemo/PropertyWrapperDemo/PlayerView.swift[PlayerView.swift]
+
+[source]
+----
+struct PlayerView: View {
+    @State var isPlaying: Bool // <1>
+    
+    var body: some View {
+        VStack(spacing: 20) {
+            Button(action: {
+                isPlaying = !isPlaying // <2>
+            }) {
+                Image(systemName: isPlaying ? "play.circle.fill" : "pause.circle.fill")
+                    .resizable()
+                    .frame(width: 75, height: 75, alignment: .center)
+                    .foregroundColor(.black)
+            }
+        }
+     
+    }
+}
+
+struct PlayerView_Previews: PreviewProvider {
+    static var previews: some View {
+        PlayerView(isPlaying: false)
+    }
+}
+
+----
+
+<1> We declare `isPlayer` annotated by `@State`, then the variable state would be managed by SwiftUI.
+<2> If we removed `@State`, we would get the error message here: "Cannot assign to property: 'self' is immutable".
+
+=== `@Bind`
+
+link:./PropertyWrapperDemo/PropertyWrapperDemo/PlayerView.swift[PlayerView.swift]
+
+[source]
+----
+struct PlayButton: View {
+    @Binding var isPlaying: Bool // <2>
+    var action: () -> Void
+    var body: some View {
+        Button(action: self.action) {
+            Image(systemName: isPlaying ? "play.circle.fill" : "pause.circle.fill")
+            .resizable()
+            .frame(width: 75, height: 75, alignment: .center)
+            .foregroundColor(.black)
+        }
+    }
+}
+
+struct PlayerView: View {
+    @State var isPlaying: Bool // <1>
+    
+    var body: some View {
+        VStack(spacing: 20) {
+            PlayButton(isPlaying: $isPlaying, action: { // <3>
+                isPlaying = !isPlaying
+            }) 
+        }
+    }
+}
+
+struct PlayerView_Previews: PreviewProvider {
+    static var previews: some View {
+        PlayerView(isPlaying: false)
+    }
+}
+----
+
+<1> `isPlaying` is decalred as `@State` in the parent view, `PlayerView`.
+
+<2> We declare the `PlayerButton` view with `@Binding` property `isPlaying`, then the property is bound to some value passed to this view.
+
+<3> We pass the projected value of `@State` `isPlaying`, i.e. `$isPlaying` to provide the binding value for `PlayButton`.
