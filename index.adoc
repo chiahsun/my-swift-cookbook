@@ -166,19 +166,18 @@ anotherStructure.largeVector   // 25
 anotherStructure.$largeVector  // large
 ----
 
-<1> We define the projected value and the type doesn't need to be the same as the type of the wrapped property.
+<1> The type of the projected value doesn't need to be the same as the type of the wrapped property.
 
 '''
 
-We will take a look on the practical usages of property wrappers, specifically for:
+We will take a look on the practical usages of property wrappers, in particular:
 
 * SwiftUI
 ** `@State`
 ** `@Binding`
+** `ObservableObject` `@Published` `@ObservedObject`
 ** `@StateObject`
-** `@ObservableObject`, `@ObservedObject`
-*** `@Published`
-** `@EnvironmentObjet`
+** `@EnvironmentObject`
 
 === `@State` 
 
@@ -261,4 +260,61 @@ struct PlayerView_Previews: PreviewProvider {
 
 <2> We declare the `PlayerButton` view with `@Binding` property `isPlaying`, then the property is bound to some value passed to this view.
 
-<3> We pass the projected value of `@State` `isPlaying`, i.e. `$isPlaying` to provide the binding value for `PlayButton`.
+<3> We pass the projected value of `@State` `isPlaying`, i.e. `$isPlaying`, to provide the binding value for `PlayButton`.
+
+=== `ObservableObject` `@Published` `@ObservedObject` `@StateObject`
+
+Described in
+
+* https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app[Manageing model data in your app]
+
+
+link:./PropertyWrapperDemo/PropertyWrapperDemo/LibraryView.swift[LibraryView.swift]
+[source]
+----
+class Book: ObservableObject {    // <1>
+    @Published var title = "Harry Potter" // <2>
+    let identifier = UUID()
+}
+
+struct BookView: View {
+    @ObservedObject var book: Book   // <3>
+    
+    var body: some View {
+        Text(book.title)
+    }
+}
+
+struct BookEditView: View {
+    @ObservedObject var book: Book   // <3>
+
+    var body: some View {
+        TextField("Edit", text: $book.title)
+            .multilineTextAlignment(.center)
+            
+    }
+}
+
+struct LibraryView: View {
+    @StateObject var book = Book()  // <4>
+    
+    var body: some View {
+        VStack(alignment: .center) {
+            BookView(book: book)
+            BookEditView(book: book)
+        }
+    }
+}
+
+struct LibraryView_Previews: PreviewProvider {
+    static var previews: some View {
+        LibraryView()
+    }
+}
+----
+
+<1> We make the model class conform to the `ObservableObject` then when its `@Published` properties changed, the user interface would get notification.
+<2> Only mark the properties as `@Published` for observing the UI change.
+<3> For the view, add `@ObservedObject` to your model variable.
+<4> Declare the model as `@StateObject` as the single source of truth for your model.
+
