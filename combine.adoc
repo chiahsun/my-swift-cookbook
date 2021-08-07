@@ -13,7 +13,10 @@ Described in
 
 * https://heckj.github.io/swiftui-notes/[Using Combine] by Joseph Heck has a very good introduction to combine and many patterns for reference
 
+
 === CombineLatest3
+
+* https://developer.apple.com/documentation/combine/published[@Published]
 
 link:./CombineDemo/CombineDemo/TermsAndConditions.swift[TermsAndConditions.swift]
 
@@ -32,3 +35,28 @@ include::./CombineDemo/CombineDemo/TermsAndConditions.swift[lines="4..49"]
 <8> `assign` is used to update the result to `granted`.
 <9> We bind the `granted` property of the model to the button.
 <10> As before, we declare the `@StateObject` model externally and pass it to the view.
+
+=== URLSession & tryMap & decode
+
+
+link:./URLSession.playground/Contents.swift[URLSession.playground/Contents.swift]
+[source]
+----
+include::./URLSession.playground/Contents.swift[lines="7..37"]
+----
+
+<1> We use `URLSession` `dataTaskPublisher` to initiate a publisher for http request.
+<2> `tryMap` is different from `map` for it can throw error.
+<3> `decode` is the operator for data decoder.
+<4> `sink` is used as the subscriber to print the result by closure.
+
+
+
+link:./URLSession.playground/Contents.swift[URLSession.playground/Contents.swift]
+[source]
+----
+include::./URLSession.playground/Contents.swift[lines="40..65"]
+----
+
+<1> For this example, we use a nonexistent user, so an error is thrown in `tryMap`.
+<2> Unlike previous example with `receiveValue` and `receiveCompletion`, this example only prints the error response in `receiveCompletion`. 
