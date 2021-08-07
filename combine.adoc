@@ -5,6 +5,30 @@ Combine is a closed source framework developed by Apple Inc. for functional reac
 
 In Apple's term, it is "a unified, declarative API for processing values over time".
 
+In a simpler way, we can regard it as the API to deal with data flow(both synchronous and asynchronous) in a declarative way functionally.
+
 Described in
 
 * https://developer.apple.com/videos/play/wwdc2019/722/[WWDC 2019 Introducing Combine]
+
+* https://heckj.github.io/swiftui-notes/[Using Combine] by Joseph Heck has a very good introduction to combine and many patterns for reference
+
+=== CombineLatest3
+
+link:./CombineDemo/CombineDemo/TermsAndConditions.swift[TermsAndConditions.swift]
+
+[source]
+----
+include::./CombineDemo/CombineDemo/TermsAndConditions.swift[lines="4..49"]
+----
+
+<1> We declare our `TermsAndConditionsModel` conforming to `ObservableObject` 
+<2> Variables are annotated as `@Published` to notify variable changes.
+<3> `granted` is the property to be determined by the three conditions.
+<4> We can only declare cancellable as optional since we want to put it in `init()`.
+<5> Note that `cancellable` must be long-lived since it get cancelled when it gets destroyed so we declare it as a variable of `TermsAndConditionsModel`.
+<6> `CombineLatest3` is used since the conditions can change indefinitely. 
+<7> `$readManualDone` is the projected value of `@Published` `readManualDone` and it has the type of `Publisher`. 
+<8> `assign` is used to update the result to `granted`.
+<9> We bind the `granted` property of the model to the button.
+<10> As before, we declare the `@StateObject` model externally and pass it to the view.

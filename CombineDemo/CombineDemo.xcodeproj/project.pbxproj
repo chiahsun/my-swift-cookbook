@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEA12A6C26BE09D900737FF5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA12A6B26BE09D900737FF5 /* CustomButton.swift */; };
 		BEEFD7FC26BDBCA50045CE03 /* CombineDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD7FB26BDBCA50045CE03 /* CombineDemoApp.swift */; };
 		BEEFD7FE26BDBCA50045CE03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEFD7FD26BDBCA50045CE03 /* ContentView.swift */; };
 		BEEFD80026BDBCA60045CE03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEEFD7FF26BDBCA60045CE03 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BEA12A6B26BE09D900737FF5 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		BEEFD7F826BDBCA50045CE03 /* CombineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEFD7FB26BDBCA50045CE03 /* CombineDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineDemoApp.swift; sourceTree = "<group>"; };
 		BEEFD7FD26BDBCA50045CE03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				BEEFD80426BDBCA60045CE03 /* Info.plist */,
 				BEEFD80126BDBCA60045CE03 /* Preview Content */,
 				BEEFD82626BDBF3C0045CE03 /* SignupView.swift */,
+				BEA12A6B26BE09D900737FF5 /* CustomButton.swift */,
 				BEEFD82826BDDCA60045CE03 /* InputRowView.swift */,
 				BEEFD82A26BDEA5B0045CE03 /* TermsAndConditions.swift */,
 				BEEFD82C26BDEA870045CE03 /* ToggleRowView.swift */,
@@ -275,6 +278,7 @@
 				BEEFD82B26BDEA5B0045CE03 /* TermsAndConditions.swift in Sources */,
 				BEEFD82726BDBF3C0045CE03 /* SignupView.swift in Sources */,
 				BEEFD7FE26BDBCA50045CE03 /* ContentView.swift in Sources */,
+				BEA12A6C26BE09D900737FF5 /* CustomButton.swift in Sources */,
 				BEEFD7FC26BDBCA50045CE03 /* CombineDemoApp.swift in Sources */,
 				BEEFD82D26BDEA870045CE03 /* ToggleRowView.swift in Sources */,
 			);

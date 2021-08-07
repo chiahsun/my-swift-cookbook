@@ -178,6 +178,8 @@ Described in
 
 * https://developer.apple.com/documentation/swiftui/state[@State]
 
+* https://developer.apple.com/videos/play/wwdc2019/226[WWDC 2019 Data Flow Through SwiftUI]
+
 link:./PropertyWrapperDemo/PropertyWrapperDemo/PlayerView.swift[PlayerView.swift]
 
 [source]
