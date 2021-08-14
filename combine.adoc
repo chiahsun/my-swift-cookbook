@@ -60,3 +60,4 @@ include::./URLSession.playground/Contents.swift[lines="40..65"]
 
 <1> For this example, we use a nonexistent user, so an error is thrown in `tryMap`.
 <2> Unlike previous example with `receiveValue` and `receiveCompletion`, this example only prints the error response in `receiveCompletion`. 
+

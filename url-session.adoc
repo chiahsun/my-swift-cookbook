@@ -1,0 +1,20 @@
+== URLSession
+
+Described in
+
+* https://developer.apple.com/documentation/foundation/url_loading_system/fetching_website_data_into_memory[Fetch data into memory]
+* https://calvinw.medium.com/using-urlsession-to-retrieve-json-in-swift-1-getting-started-d929f3a49c67[Retrieve JSON in Swift]
+
+link:URLJsonResponse.playground/Contents.swift[URLJsonResponse.playground/Contents.swift]
+
+This example requests the JSON data from https://www.mediawiki.org/wiki/API:Get_the_contents_of_a_page[Wiki API].
+
+[source]
+----
+include::URLJsonResponse.playground/Contents.swift[lines=4..21;26..48]
+----
+
+<1> Declare `struct` as `Codable` to decode using `JSONDecoder`.
+<2> Handle server error
+<3> Handle JSON parse error
+
