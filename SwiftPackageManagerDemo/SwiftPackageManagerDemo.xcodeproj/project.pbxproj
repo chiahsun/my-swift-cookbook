@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		BE16383A26C8CC63003F0CD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE16383926C8CC63003F0CD0 /* Preview Assets.xcassets */; };
 		BE16384526C8CC63003F0CD0 /* SwiftPackageManagerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE16384426C8CC63003F0CD0 /* SwiftPackageManagerDemoTests.swift */; };
 		BE16385026C8CC63003F0CD0 /* SwiftPackageManagerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE16384F26C8CC63003F0CD0 /* SwiftPackageManagerDemoUITests.swift */; };
+		BE16385F26C8D0BD003F0CD0 /* OrderedDictionary in Frameworks */ = {isa = PBXBuildFile; productRef = BE16385E26C8D0BD003F0CD0 /* OrderedDictionary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE16385F26C8D0BD003F0CD0 /* OrderedDictionary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +148,9 @@
 			dependencies = (
 			);
 			name = SwiftPackageManagerDemo;
+			packageProductDependencies = (
+				BE16385E26C8D0BD003F0CD0 /* OrderedDictionary */,
+			);
 			productName = SwiftPackageManagerDemo;
 			productReference = BE16382F26C8CC62003F0CD0 /* SwiftPackageManagerDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +222,9 @@
 				Base,
 			);
 			mainGroup = BE16382626C8CC62003F0CD0;
+			packageReferences = (
+				BE16385D26C8D0BD003F0CD0 /* XCRemoteSwiftPackageReference "OrderedDictionary" */,
+			);
 			productRefGroup = BE16383026C8CC62003F0CD0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -419,6 +427,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftPackageManagerDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftPackageManagerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -440,6 +449,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftPackageManagerDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftPackageManagerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -574,6 +584,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BE16385D26C8D0BD003F0CD0 /* XCRemoteSwiftPackageReference "OrderedDictionary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lukaskubanek/OrderedDictionary";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BE16385E26C8D0BD003F0CD0 /* OrderedDictionary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE16385D26C8D0BD003F0CD0 /* XCRemoteSwiftPackageReference "OrderedDictionary" */;
+			productName = OrderedDictionary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BE16382726C8CC62003F0CD0 /* Project object */;
 }

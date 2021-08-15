@@ -6,6 +6,8 @@ Described in
 
 * https://developer.apple.com/documentation/swift/range[Range]
 
+link:./Iteration.playground/Contents.swift[Iteration.playground/Contents.swift]
+
 [source]
 ----
 include::Iteration.playground/Contents.swift[lines=4..7;9..12;14..17]

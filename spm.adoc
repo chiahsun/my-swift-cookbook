@@ -1,0 +1,30 @@
+== Swift Package Manager
+
+=== Add module dependency in Xcode
+
+image::images/spm-1.png[]
+* Click your project name at the left panel (e.g. `SwiftPackageManagerDemo`)
+
+image::images/spm-2.png[]
+
+* Click `SwiftPackageManagerDemo` under `PROJECT` at the middle panel
+* Click `Swift Packages` at the top-right corner
+* Click `+` to add package dependency
+
+image::images/spm-3.png[]
+
+* Add your module dependency, we use `https://github.com/lukaskubanek/OrderedDictionary` as an example.
+
+image::images/spm-4.png[]
+image::images/spm-5.png[]
+
+link:./SwiftPackageManagerDemo[SwiftPackageManagerDemo]
+
+[source]
+----
+include::SwiftPackageManagerDemo/SwiftPackageManagerDemo/ContentView.swift[lines=1..13]
+----
+
+<1> Add `import` for your library
+<2> The sample usage for this library
+
