@@ -3,6 +3,7 @@
 === Add module dependency in Xcode
 
 image::images/spm-1.png[]
+
 * Click your project name at the left panel (e.g. `SwiftPackageManagerDemo`)
 
 image::images/spm-2.png[]
