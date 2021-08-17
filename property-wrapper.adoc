@@ -364,4 +364,27 @@ struct LibraryView2_Previews: PreviewProvider {
 <1> Use `@EnvironmentObject` annotation to get the passed property.
 <2> Also create the model and pass as the environment object for your preview.
 
+=== `@Environment`
+
+Describe in
+
+* https://developer.apple.com/documentation/swiftui/environment[SwiftUI @Environment]
+* https://developer.apple.com/tutorials/swiftui/working-with-ui-controls[Working with UI Controls]
+
+We can read the environment variables specific to SwiftUI using `@Environment` property wrapper.
+
+link:./PropertyWrapperDemo/PropertyWrapperDemo/EditorView.swift[EditorView.swift]
+
+The details in source code show that you can have a subview(e.g. `EditableNameView`) or use the environment variable directly(e.g. `Toggle`).
+
+[source]
+----
+include::./PropertyWrapperDemo/PropertyWrapperDemo/EditorView.swift[lines=3..11;13;16..27;32..36]
+----
+
+<1> We get `\.editMode` from `@Environment` property wrapper.
+<2> We control if the text field is editable through `model` 's wrapped value(i.e.`\.editMode`).
+<3> `EditButton` toggles `\.editMode`.
+<4> We declare the `EditableNameView` in the parent view.
+
 

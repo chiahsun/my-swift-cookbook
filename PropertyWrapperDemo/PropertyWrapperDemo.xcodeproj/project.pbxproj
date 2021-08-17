@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE2E218C26CB85FA00368E9A /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2E218B26CB85FA00368E9A /* EditorView.swift */; };
 		BE4CEAA826BD638A000463FA /* PropertyWrapperDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4CEAA726BD638A000463FA /* PropertyWrapperDemoApp.swift */; };
 		BE4CEAAA26BD638A000463FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4CEAA926BD638A000463FA /* ContentView.swift */; };
 		BE4CEAAC26BD638B000463FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4CEAAB26BD638B000463FA /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE2E218B26CB85FA00368E9A /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
 		BE4CEAA426BD638A000463FA /* PropertyWrapperDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PropertyWrapperDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE4CEAA726BD638A000463FA /* PropertyWrapperDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapperDemoApp.swift; sourceTree = "<group>"; };
 		BE4CEAA926BD638A000463FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				BE4CEAD226BD6F36000463FA /* PlayerView.swift */,
 				BE4CEAD426BD8624000463FA /* LibraryView.swift */,
 				BEEFD7ED26BDACF70045CE03 /* LibraryView2.swift */,
+				BE2E218B26CB85FA00368E9A /* EditorView.swift */,
 			);
 			path = PropertyWrapperDemo;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				BE4CEAD526BD8624000463FA /* LibraryView.swift in Sources */,
 				BEEFD7EE26BDACF70045CE03 /* LibraryView2.swift in Sources */,
 				BE4CEAD326BD6F36000463FA /* PlayerView.swift in Sources */,
+				BE2E218C26CB85FA00368E9A /* EditorView.swift in Sources */,
 				BE4CEAAA26BD638A000463FA /* ContentView.swift in Sources */,
 				BE4CEAA826BD638A000463FA /* PropertyWrapperDemoApp.swift in Sources */,
 			);
