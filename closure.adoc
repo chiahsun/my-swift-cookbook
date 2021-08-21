@@ -1,0 +1,16 @@
+== Closure
+
+=== Syntax
+
+
+Described in
+
+* https://docs.swift.org/swift-book/LanguageGuide/Closures.html[Closures]
+
+link:./Closures.playground/Contents.swift[Closures.playground/Contents.swift]
+
+[source]
+----
+include::Closures.playground/Contents.swift[lines=3..24]
+----
+
