@@ -7,6 +7,7 @@
 :icons: font
 
 include::iteration.adoc[]
+include::access-control.adoc[]
 include::url-session.adoc[]
 include::property-wrapper.adoc[]
 include::combine.adoc[]

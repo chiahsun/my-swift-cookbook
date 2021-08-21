@@ -1,0 +1,16 @@
+== Access Control
+
+=== Read-only property
+
+
+Described in
+
+* https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html[Access Control]
+
+link:./AccessControl.playground/Contents.swift[AccessControl.playground/Contents.swift]
+
+[source]
+----
+include::AccessControl.playground/Contents.swift[lines=3..18]
+----
+
