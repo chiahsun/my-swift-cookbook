@@ -1,0 +1,27 @@
+==== Future
+
+Described in
+
+* https://developer.apple.com/documentation/combine/using-combine-for-your-app-s-asynchronous-code[Using Combine for Your App’s Asynchronous Code]
+
+link:./Future.playground/Contents.swift[Future.playground/Contents.swift]
+
+[source]
+----
+include::Future.playground/Contents.swift[lines=4..18]
+----
+
+This is a future with error example.
+
+link:./FutureWithError.playground/Contents.swift[FutureWithError.playground/Contents.swift]
+
+[source]
+----
+include::FutureWithError.playground/Contents.swift[lines=6..21]
+----
+
+[source]
+----
+include::FutureWithError.playground/Contents.swift[lines=23..48]
+----
+

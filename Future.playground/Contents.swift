@@ -16,3 +16,12 @@ let cancellable = performAsync()
 // Prints:
 // Future: 1
 
+let cancellable2 = Future<Int, Never>() { promise in
+    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        promise(Result.success(2))
+    }
+}.sink(receiveValue: { val in
+    print("Future: \(val)")
+})
+// Prints:
+// Future: 2
