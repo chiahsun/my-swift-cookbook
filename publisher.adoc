@@ -1,0 +1,58 @@
+=== Publisher
+
+Described in
+
+* https://developer.apple.com/documentation/combine/publisher[Publisher]
+
+An example of publisher.
+
+link:./Publisher.playground/Contents.swift[Publisher.playground/Contents.swift]
+
+[source]
+----
+include::Publisher.playground/Contents.swift[lines=3..9]
+----
+
+include::just.adoc[]
+
+==== PassthroughSubject
+
+Described in
+
+* https://developer.apple.com/documentation/combine/passthroughsubject[PassthroughSubject]
+
+[quote]
+----
+A subject that broadcasts elements to downstream subscribers.
+Unlike CurrentValueSubject, a PassthroughSubject doesn’t have an initial value or a buffer of the most recently-published element.
+----
+
+link:./PassthroughSubject.playground/Contents.swift[PassthroughSubject.playground/Contents.swift]
+
+[source]
+----
+include::PassthroughSubject.playground/Contents.swift[lines=4..14]
+----
+
+==== CurrentValueSubject
+
+Described in
+
+* https://developer.apple.com/documentation/combine/currentvaluesubject[CurrentValueSubject]
+
+[quote]
+----
+Unlike PassthroughSubject, CurrentValueSubject maintains a buffer of the most recently published element.
+----
+
+CurrentValueSubject has a state(initial value or updated value).
+
+link:./CurrentValueSubject.playground/Contents.swift[CurrentValueSubject.playground/Contents.swift]
+
+[source]
+----
+include::CurrentValueSubject.playground/Contents.swift[lines=4..19]
+----
+
+TODO: @Published
+

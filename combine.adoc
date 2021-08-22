@@ -13,7 +13,12 @@ Described in
 
 * https://heckj.github.io/swiftui-notes/[Using Combine] by Joseph Heck has a very good introduction to combine and many patterns for reference
 
-include::just.adoc[]
+Open source version
+
+* http://reactivex.io/ [reactivex.io]
+
+include::publisher.adoc[]
+
 include::flat-map.adoc[]
 
 === CombineLatest3
