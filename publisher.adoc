@@ -54,5 +54,14 @@ link:./CurrentValueSubject.playground/Contents.swift[CurrentValueSubject.playgro
 include::CurrentValueSubject.playground/Contents.swift[lines=4..19]
 ----
 
-TODO: @Published
+==== @Published
+
+link:./Published.playground/Contents.swift[Published.playground/Contents.swift]
+
+[source]
+----
+include::Published.playground/Contents.swift[lines=3..16]
+----
+
+`@Published` in SwiftUI is one kind of Publisher.
 
