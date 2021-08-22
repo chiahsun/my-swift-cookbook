@@ -1,0 +1,34 @@
+== `weak` `unowned`
+
+Described in
+
+* https://docs.swift.org/swift-book/LanguageGuide/Closures.html[Closures]
+* https://docs.swift.org/swift-book/LanguageGuide/AutomaticReferenceCounting.html[Strong Reference Cycles for Closures]
+
+link:./WeakUnowned.playground/Contents.swift[WeakUnowned.playground/Contents.swift]
+
+We start from the strong reference cycle problem.
+
+[source]
+----
+include::WeakUnowned.playground/Contents.swift[lines=3..28]
+----
+<1> The variable, `c`, holds a strong reference to the closure.
+<2> The closure holds a strong reference to the variable, `c`.
+<3> Note that deinit is not called
+
+The situation often occurs when you define handlers/callbacks of some class and your class stores some of the handlers/callbacks.
+
+Since the memory management of Swift is automatic reference counting, the so-called strong reference cycle would cause memory leak.
+
+The solution is to use weak reference or unowned reference.
+
+We can use the keywords in capture list of the closures.
+
+[source]
+----
+include::WeakUnowned.playground/Contents.swift[lines=29..48]
+----
+<1> Either weak or unowned reference can break the strong reference cycle
+<2> `unowned` reference is like `weak` reference, but the user should make sure that unowned object exists; otherwise, it would cause runtime error.
+

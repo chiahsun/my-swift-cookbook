@@ -10,6 +10,7 @@
 include::iteration.adoc[]
 include::access-control.adoc[]
 include::closure.adoc[]
+include::weak-unowned.adoc[]
 include::url-session.adoc[]
 include::property-wrapper.adoc[]
 include::combine.adoc[]
