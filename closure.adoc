@@ -11,6 +11,6 @@ link:./Closures.playground/Contents.swift[Closures.playground/Contents.swift]
 
 [source]
 ----
-include::Closures.playground/Contents.swift[lines=3..24]
+include::Closures.playground/Contents.swift[lines=3..32]
 ----
 

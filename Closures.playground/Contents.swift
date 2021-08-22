@@ -19,6 +19,14 @@ names.sorted(by: { s1, s2 in return s1 > s2 })
 names.sorted(by: { s1, s2 in s1 > s2})
 // 5
 names.sorted(by: { $0 > $1 })
+// 6
+names.sorted(by: >)
+
+//Trailing closures
+// 7
+names.sorted() { $0 > $1 }
+// 8
+names.sorted { $0 > $1 }
 
 // All of the above equal to: ["Ewa", "Daniella", "Chris", "Barry", "Alex"]
 

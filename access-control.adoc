@@ -1,6 +1,6 @@
 == Access Control
 
-=== Read-only property
+=== Read-only property (`private(set)`)
 
 
 Described in

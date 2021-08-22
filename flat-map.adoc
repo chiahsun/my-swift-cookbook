@@ -1,0 +1,39 @@
+=== flapMap
+
+Described in
+
+* https://developer.apple.com/documentation/combine/publisher/flatmap(maxpublishers:_:)-3k7z5[Combine Publisher flatMap(maxPublishers:_:)]
+* https://developer.apple.com/videos/play/wwdc2019/721/[Combine in Practice]
+
+
+We start from the version of higher-order functions.
+
+* https://developer.apple.com/documentation/swift/sequence/2905332-flatmap[Sequence flatMap(_:)]
+
+link:./FlatMap.playground/Contents.swift[FlatMap.playground/Contents.swift]
+
+[source]
+----
+include::FlatMap.playground/Contents.swift[lines=4..6]
+----
+
+Let's check a pure sink version without flatMap.
+
+link:./FlatMap.playground/Contents.swift[FlatMap.playground/Contents.swift]
+
+[source]
+----
+include::FlatMap.playground/Contents.swift[lines=8..17]
+----
+
+Then, let's add the flatMap stage.
+
+link:./FlatMap.playground/Contents.swift[FlatMap.playground/Contents.swift]
+
+[source]
+----
+include::FlatMap.playground/Contents.swift[lines=21..40]
+----
+
+We observe that the combine version of flatMap does just like what higher order function version one do with source as publisher.
+
