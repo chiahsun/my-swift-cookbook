@@ -54,6 +54,19 @@ link:./CurrentValueSubject.playground/Contents.swift[CurrentValueSubject.playgro
 include::CurrentValueSubject.playground/Contents.swift[lines=4..19]
 ----
 
+==== Future
+
+Described in
+
+* https://developer.apple.com/documentation/combine/using-combine-for-your-app-s-asynchronous-code[Using Combine for Your App’s Asynchronous Code]
+
+link:./Future.playground/Contents.swift[Future.playground/Contents.swift]
+
+[source]
+----
+include::Future.playground/Contents.swift[lines=4..18]
+----
+
 ==== @Published
 
 link:./Published.playground/Contents.swift[Published.playground/Contents.swift]
