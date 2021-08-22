@@ -1,0 +1,23 @@
+=== Just
+
+Described in
+
+* https://developer.apple.com/documentation/combine/just[Just]
+
+[quote]
+----
+A publisher that emits an output to each subscriber just once, and then finishes.
+----
+
+link:./Just.playground/Contents.swift[Just.playground/Contents.swift]
+
+[source]
+----
+include::Just.playground/Contents.swift[lines=4..7]
+----
+
+[source]
+----
+include::Just.playground/Contents.swift[lines=9..17]
+----
+
