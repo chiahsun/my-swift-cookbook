@@ -3,4 +3,4 @@
 === XCode keyboard shortcut
 
 * Toggle debug area: `Command` + `Shift` + `Y`
-
+* Toggle canvas: `Command` + `Option` + `Return(Enter)`
