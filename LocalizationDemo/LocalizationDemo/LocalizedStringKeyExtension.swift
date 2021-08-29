@@ -1,8 +1,6 @@
 import Foundation
 import SwiftUI
 
-// https://stackoverflow.com/questions/60841915/how-to-change-localizedstringkey-to-string-in-swiftui
-
 extension LocalizedStringKey {
     var stringKey: String {
         let description = "\(self)"
