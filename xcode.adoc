@@ -4,3 +4,22 @@
 
 * Toggle debug area: `Command` + `Shift` + `Y`
 * Toggle canvas: `Command` + `Option` + `Return(Enter)`
+
+=== How to change unit test locale?
+
+image::images/test_change_locale1.png[pageControl,300]
+
+Click the project name at the left of your simulator.
+
+image::images/test_change_locale2.png[pageControl,300]
+image::images/test_change_locale3.png[pageControl,300]
+
+Click `Edit Scheme` in the drop-down menu,
+
+image::images/test_change_locale4.png[pageControl,500]
+
+image::images/test_change_locale5.png[pageControl,500]
+
+Change `App Language` to your target language.
+
+Run UI test.
