@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BE95508226DAFCCA00CED0C9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE95508426DAFCCA00CED0C9 /* Localizable.strings */; };
+		BEA2FB1C26DBA2BB008456BD /* LocalizedStringKeyExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA2FB1B26DBA2BB008456BD /* LocalizedStringKeyExtension.swift */; };
+		BEA2FB1E26DBA834008456BD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE95508426DAFCCA00CED0C9 /* Localizable.strings */; };
 		BEB61B7226DAF618003BB0A4 /* LocalizationDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB61B7126DAF618003BB0A4 /* LocalizationDemoApp.swift */; };
 		BEB61B7426DAF618003BB0A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB61B7326DAF618003BB0A4 /* ContentView.swift */; };
 		BEB61B7626DAF619003BB0A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEB61B7526DAF619003BB0A4 /* Assets.xcassets */; };
@@ -37,6 +39,9 @@
 /* Begin PBXFileReference section */
 		BE95508326DAFCCA00CED0C9 /* Base */ = {isa = PBXFileReference; explicitFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BE95508526DAFCE300CED0C9 /* en */ = {isa = PBXFileReference; explicitFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BEA2FB1B26DBA2BB008456BD /* LocalizedStringKeyExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedStringKeyExtension.swift; sourceTree = "<group>"; };
+		BEA2FB1D26DBA4C7008456BD /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		BEA2FB1F26DBBC1C008456BD /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BEB61B6E26DAF618003BB0A4 /* LocalizationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB61B7126DAF618003BB0A4 /* LocalizationDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationDemoApp.swift; sourceTree = "<group>"; };
 		BEB61B7326DAF618003BB0A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +107,7 @@
 				BEB61B7326DAF618003BB0A4 /* ContentView.swift */,
 				BEB61B7526DAF619003BB0A4 /* Assets.xcassets */,
 				BEB61B7726DAF619003BB0A4 /* Preview Content */,
+				BEA2FB1B26DBA2BB008456BD /* LocalizedStringKeyExtension.swift */,
 			);
 			path = LocalizationDemo;
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 				en,
 				"zh-Hant",
 				Base,
+				ja,
 			);
 			mainGroup = BEB61B6526DAF618003BB0A4;
 			productRefGroup = BEB61B6F26DAF618003BB0A4 /* Products */;
@@ -246,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA2FB1E26DBA834008456BD /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEB61B7426DAF618003BB0A4 /* ContentView.swift in Sources */,
+				BEA2FB1C26DBA2BB008456BD /* LocalizedStringKeyExtension.swift in Sources */,
 				BEB61B7226DAF618003BB0A4 /* LocalizationDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +315,8 @@
 			children = (
 				BE95508326DAFCCA00CED0C9 /* Base */,
 				BE95508526DAFCE300CED0C9 /* en */,
+				BEA2FB1D26DBA4C7008456BD /* zh-Hant */,
+				BEA2FB1F26DBBC1C008456BD /* ja */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -494,8 +505,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KPA26N4668;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -518,8 +531,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KPA26N4668;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -541,8 +556,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KPA26N4668;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -565,6 +582,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KPA26N4668;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

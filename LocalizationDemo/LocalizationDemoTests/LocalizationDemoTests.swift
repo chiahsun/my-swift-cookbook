@@ -1,5 +1,6 @@
 import XCTest
 @testable import LocalizationDemo
+import SwiftUI
 
 class LocalizationDemoTests: XCTestCase {
 
@@ -12,8 +13,10 @@ class LocalizationDemoTests: XCTestCase {
     }
 
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // XCTAssertEqual(LocalizedStringKey("hello").stringValue(), "hello!")
+        XCTAssertEqual(LocalizedStringKey("hello").stringValue(locale: Locale(identifier: "en")), "hello!")
+        XCTAssertEqual(LocalizedStringKey("hello").stringValue(locale: Locale(identifier: "zh-Hant")), "你好")
+        XCTAssertEqual(LocalizedStringKey("hello").stringValue(locale: Locale(identifier: "ja")), "hello")
     }
 
     func testPerformanceExample() throws {
