@@ -7,10 +7,15 @@ struct ContentView: View {
         return LocalizedStringKey("hello").stringValue(locale: locale)
     }
     
+    var none: String? {
+        return LocalizedStringKey("none").stringOptionalValue(locale: locale)
+    }
+    
     var name2: LocalizedStringKey = "hello"
     var body: some View {
         VStack {
             Text(name).padding()
+            Text(none ?? "is nil").padding()
             Text(locale.languageCode ?? "nil")
             Text(locale.identifier)
             Text(Locale.current.languageCode ?? "nil")

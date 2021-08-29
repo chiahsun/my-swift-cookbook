@@ -12,12 +12,19 @@ class LocalizationDemoTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testLocalizedStringKey() throws {
         // XCTAssertEqual(LocalizedStringKey("hello").stringValue(), "hello!")
         XCTAssertEqual(LocalizedStringKey("hello").stringValue(locale: Locale(identifier: "en")), "hello!")
         XCTAssertEqual(LocalizedStringKey("hello").stringValue(locale: Locale(identifier: "zh-Hant")), "你好")
         XCTAssertEqual(LocalizedStringKey("hello").stringValue(locale: Locale(identifier: "ja")), "hello")
     }
+    
+    func testExample() throws {
+        LocalizedStringKey("hello").stringValue(locale: Locale(identifier: "en"))
+        LocalizedStringKey("hello").stringValue(locale: Locale(identifier: "ja"))
+    }
+    
+    
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
