@@ -2,7 +2,7 @@
 
 image::images/localization1.png[pageControl,600]
 
-Under `info` `Localizations`
+Under `Info` `Localizations`
 
 * Click `+` to add languages
 * Please toggle `Use Base Internationalization` on
