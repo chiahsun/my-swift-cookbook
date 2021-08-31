@@ -1,0 +1,17 @@
+== SwiftUI
+
+=== How to put image in proportional to its parent view?
+
+link:./SwiftUIDemo/SwiftUIDemo/Extension/ImageExtension.swift[ImageExtension.swift]
+
+[source]
+----
+include::./SwiftUIDemo/SwiftUIDemo/Extension/ImageExtension.swift[lines=2..15]
+----
+
+link:./SwiftUIDemo/SwiftUIDemo/ImageView.swift[ImageView.swift]
+
+[source]
+----
+include::./SwiftUIDemo/SwiftUIDemo/ImageView.swift[lines=4..7]
+----
