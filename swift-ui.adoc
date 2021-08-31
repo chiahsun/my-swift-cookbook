@@ -15,3 +15,15 @@ link:./SwiftUIDemo/SwiftUIDemo/ImageView.swift[ImageView.swift]
 ----
 include::./SwiftUIDemo/SwiftUIDemo/ImageView.swift[lines=4..7]
 ----
+
+=== How to return different view based on condition as a view?
+
+image:images/anyview1.png[anyview,200]
+image:images/anyview2.png[anyview,200]
+
+link:./SwiftUIDemo/SwiftUIDemo/AnyViewDemo.swift[AnyViewDemo.swift]
+
+[source]
+----
+include::./SwiftUIDemo/SwiftUIDemo/AnyViewDemo.swift[lines=6..16]
+----

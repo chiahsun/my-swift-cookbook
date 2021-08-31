@@ -17,6 +17,7 @@
 		BEDF373526DC130B004AF4F6 /* SelectionMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDF373426DC130B004AF4F6 /* SelectionMenu.swift */; };
 		BEF958EA26DE53A200913B6D /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF958E926DE53A200913B6D /* ImageExtension.swift */; };
 		BEF958EC26DE53D100913B6D /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF958EB26DE53D100913B6D /* ImageView.swift */; };
+		BEF958EE26DE560F00913B6D /* AnyViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF958ED26DE560F00913B6D /* AnyViewDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		BEDF373426DC130B004AF4F6 /* SelectionMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionMenu.swift; sourceTree = "<group>"; };
 		BEF958E926DE53A200913B6D /* ImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
 		BEF958EB26DE53D100913B6D /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		BEF958ED26DE560F00913B6D /* AnyViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyViewDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				BEDF371026DC12A7004AF4F6 /* Preview Content */,
 				BEDF373426DC130B004AF4F6 /* SelectionMenu.swift */,
 				BEF958EB26DE53D100913B6D /* ImageView.swift */,
+				BEF958ED26DE560F00913B6D /* AnyViewDemo.swift */,
 			);
 			path = SwiftUIDemo;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				BEDF370B26DC12A5004AF4F6 /* SwiftUIDemoApp.swift in Sources */,
 				BEDF373526DC130B004AF4F6 /* SelectionMenu.swift in Sources */,
 				BEF958EA26DE53A200913B6D /* ImageExtension.swift in Sources */,
+				BEF958EE26DE560F00913B6D /* AnyViewDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
