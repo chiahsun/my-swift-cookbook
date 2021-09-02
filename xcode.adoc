@@ -23,3 +23,12 @@ image::images/test_change_locale5.png[pageControl,500]
 Change `App Language` to your target language.
 
 Run UI test.
+
+=== How to add resources to my project? (Common problem: file not found in app bundle)
+
+image::images/add-resources1.png[anyview,200]
+image::images/add-resources2.png[anyview,300]
+image::images/add-resources3.png[anyview,500]
+
+* Toggle `Target Membership`
+

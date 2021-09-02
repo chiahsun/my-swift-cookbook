@@ -171,6 +171,7 @@ We will take a look on the practical usages of property wrappers, in particular:
 ** `ObservableObject` `@Published` `@ObservedObject`
 ** `@StateObject`
 ** `@EnvironmentObject`
+** `@Environment`
 
 === `@State` 
 
