@@ -8,7 +8,7 @@ Described in
 
 link:./Dict.playground/Contents.swift[Dict.playground/Contents.swift]
 
-[source]
+[source,swift]
 ----
 include::Dict.playground/Contents.swift[lines=4..52]
 ----
