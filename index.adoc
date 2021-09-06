@@ -7,6 +7,9 @@
 :source-language: swift 
 :icons: font
 
+== Collections
+include::array.adoc[]
+
 include::iteration.adoc[]
 include::access-control.adoc[]
 include::closure.adoc[]
