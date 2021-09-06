@@ -4,11 +4,10 @@
 
 Described in
 
-* https://developer.apple.com/forums/thread/652006[Change value of array in for-loop
-]
+* https://developer.apple.com/forums/thread/652006[Change value of array in for-loop]
 * https://stackoverflow.com/questions/54973104/iterate-through-swift-array-and-change-values[Iterate through Swift array and change values]
 
-link:./Array.playground/Contents.swift[Closures.playground/Contents.swift]
+link:./Array.playground/Contents.swift[Array.playground/Contents.swift]
 
 [source]
 ----
@@ -18,3 +17,4 @@ include::Array.playground/Contents.swift[lines=3..30]
 <1> `var a` only makes the copied value mutable
 <2> 1. Use indices
 <3> 2. Use forEach
+

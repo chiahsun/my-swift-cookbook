@@ -1,0 +1,20 @@
+=== Dictionary
+
+==== Modify dictionary elements in iteration
+
+Described in
+
+* https://stackoverflow.com/questions/42628131/update-all-values-of-a-dictionary[Update all values of a Dictionary]
+
+link:./Dict.playground/Contents.swift[Dict.playground/Contents.swift]
+
+[source]
+----
+include::Dict.playground/Contents.swift[lines=4..52]
+----
+
+<1> Use `keys`
+<2> Iteration without modification using `indices`
+<3> Use `forEach`
+<4> Use `keys.forEach`
+
