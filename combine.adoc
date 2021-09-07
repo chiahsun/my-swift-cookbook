@@ -19,6 +19,8 @@ Open source version
 
 include::publisher.adoc[]
 
+include::subscriber.adoc[]
+
 include::flat-map.adoc[]
 
 === CombineLatest3

@@ -9,7 +9,7 @@ Described in
 
 link:./Array.playground/Contents.swift[Array.playground/Contents.swift]
 
-[source]
+[source,swift]
 ----
 include::Array.playground/Contents.swift[lines=3..30]
 ----

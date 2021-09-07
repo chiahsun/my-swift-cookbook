@@ -1,0 +1,27 @@
+=== Subscriber
+
+==== Custom Subscriber & Back Pressure
+
+Described in
+
+* https://developer.apple.com/documentation/combine/processing-published-elements-with-subscribers[Processing Published Elements with Subscribers]
+
+You can define your custom subscriber and determine *back pressure*
+
+1. when to start receive
+2. request more data on demand
+3. do things after completion
+
+Unlike `sink(receiveValue:)` and `assign(to:on:)` which request unlimited demand, custom subscribers let you have fine-grained control on the demand for both the size and timing.
+
+link:./TimerPublisher.playground/Contents.swift[TimerPublisher.playground/Contents.swift]
+
+[source,swift]
+----
+include::TimerPublisher.playground/Contents.swift[lines=6..39]
+----
+
+<1> We subscribe here and `receive(subscription: Subscription)` would be called.
+<2> We request a maximum of 3 resources after one seconds.
+<3> Data comes in `receive(_ input: Date) -> Subscribers.Demand` and we don't request more demand. (If you want to request more resources indefinitely, you can return `Subscribers.Demand.max(1))` for example.
+

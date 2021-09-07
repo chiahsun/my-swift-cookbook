@@ -8,11 +8,11 @@ build:
 view:
 	open index.html
 
+# See: https://gist.github.com/cheungnj/38becf045654119f96c87db829f1be8e
 %.xml: %.adoc
 	asciidoctor -b docbook $<
 	
 %.md: %.xml
 	pandoc -f docbook -t gfm $< -o $@
 
-md: dict.md 
-
+md: array.md dict.md
