@@ -15,4 +15,4 @@ view:
 %.md: %.xml
 	pandoc -f docbook -t gfm $< -o $@
 
-md: array.md dict.md
+md: array.md dict.md subscriber.md future.md publisher.md

@@ -8,7 +8,7 @@ An example of publisher.
 
 link:./Publisher.playground/Contents.swift[Publisher.playground/Contents.swift]
 
-[source]
+[source,swift]
 ----
 include::Publisher.playground/Contents.swift[lines=3..9]
 ----
@@ -29,7 +29,7 @@ Unlike CurrentValueSubject, a PassthroughSubject doesn’t have an initial value
 
 link:./PassthroughSubject.playground/Contents.swift[PassthroughSubject.playground/Contents.swift]
 
-[source]
+[source,swift]
 ----
 include::PassthroughSubject.playground/Contents.swift[lines=4..14]
 ----
@@ -49,7 +49,7 @@ CurrentValueSubject has a state(initial value or updated value).
 
 link:./CurrentValueSubject.playground/Contents.swift[CurrentValueSubject.playground/Contents.swift]
 
-[source]
+[source,swift]
 ----
 include::CurrentValueSubject.playground/Contents.swift[lines=4..19]
 ----
@@ -60,7 +60,7 @@ include::future.adoc[]
 
 link:./Published.playground/Contents.swift[Published.playground/Contents.swift]
 
-[source]
+[source,swift]
 ----
 include::Published.playground/Contents.swift[lines=3..16]
 ----
