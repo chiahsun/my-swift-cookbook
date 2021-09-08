@@ -4,14 +4,14 @@
 
 link:./SwiftUIDemo/SwiftUIDemo/Extension/ImageExtension.swift[ImageExtension.swift]
 
-[source]
+[source,swift]
 ----
 include::./SwiftUIDemo/SwiftUIDemo/Extension/ImageExtension.swift[lines=2..15]
 ----
 
 link:./SwiftUIDemo/SwiftUIDemo/ImageView.swift[ImageView.swift]
 
-[source]
+[source,swift]
 ----
 include::./SwiftUIDemo/SwiftUIDemo/ImageView.swift[lines=4..7]
 ----
@@ -23,7 +23,21 @@ image:images/anyview2.png[anyview,200]
 
 link:./SwiftUIDemo/SwiftUIDemo/AnyViewDemo.swift[AnyViewDemo.swift]
 
-[source]
+[source,swift]
 ----
 include::./SwiftUIDemo/SwiftUIDemo/AnyViewDemo.swift[lines=6..16]
 ----
+
+=== NavigationView/NavigationLink
+
+link:./NavigationLinkDemo/NavigationLinkDemo/NavigationLinkView.swift[NavigationLinkView.swift]
+
+[source,swift]
+----
+include::./NavigationLinkDemo/NavigationLinkDemo/NavigationLinkView.swift[lines=3..38]
+----
+
+<1> Basic way
+<2> You can set `isActive` programmatically using binding
+<3> You can hide the navigation link in an empty view and use `isActive` for navigation using binding programmatically
+
