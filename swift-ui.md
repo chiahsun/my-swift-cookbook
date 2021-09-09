@@ -98,3 +98,11 @@ struct NavigationLinkView_Previews: PreviewProvider {
 
 -   You can hide the navigation link in an empty view and use `isActive`
     for navigation using binding programmatically
+
+<div class="caution">
+
+If you have navigation link inside another view navigated by some
+navigation link, don’t declare anther `NavigationView`, just reuse the
+top-most `NavigationView`.
+
+</div>

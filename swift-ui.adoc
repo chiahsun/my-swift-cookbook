@@ -41,3 +41,5 @@ include::./NavigationLinkDemo/NavigationLinkDemo/NavigationLinkView.swift[lines=
 <2> You can set `isActive` programmatically using binding
 <3> You can hide the navigation link in an empty view and use `isActive` for navigation using binding programmatically
 
+CAUTION: If you have navigation link inside another view navigated by some navigation link, don't declare anther `NavigationView`, just reuse the top-most `NavigationView`.
+

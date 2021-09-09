@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE3F62E026E9C0A900B45463 /* GeometryReaderDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3F62DF26E9C0A900B45463 /* GeometryReaderDemo.swift */; };
 		BEDF370B26DC12A5004AF4F6 /* SwiftUIDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDF370A26DC12A5004AF4F6 /* SwiftUIDemoApp.swift */; };
 		BEDF370D26DC12A5004AF4F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDF370C26DC12A5004AF4F6 /* ContentView.swift */; };
 		BEDF370F26DC12A7004AF4F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEDF370E26DC12A7004AF4F6 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE3F62DF26E9C0A900B45463 /* GeometryReaderDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderDemo.swift; sourceTree = "<group>"; };
 		BEDF370726DC12A5004AF4F6 /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDF370A26DC12A5004AF4F6 /* SwiftUIDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDemoApp.swift; sourceTree = "<group>"; };
 		BEDF370C26DC12A5004AF4F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				BEDF373426DC130B004AF4F6 /* SelectionMenu.swift */,
 				BEF958EB26DE53D100913B6D /* ImageView.swift */,
 				BEF958ED26DE560F00913B6D /* AnyViewDemo.swift */,
+				BE3F62DF26E9C0A900B45463 /* GeometryReaderDemo.swift */,
 			);
 			path = SwiftUIDemo;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				BEDF370B26DC12A5004AF4F6 /* SwiftUIDemoApp.swift in Sources */,
 				BEDF373526DC130B004AF4F6 /* SelectionMenu.swift in Sources */,
 				BEF958EA26DE53A200913B6D /* ImageExtension.swift in Sources */,
+				BE3F62E026E9C0A900B45463 /* GeometryReaderDemo.swift in Sources */,
 				BEF958EE26DE560F00913B6D /* AnyViewDemo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -21,11 +21,11 @@ Described in
 
 * https://developer.apple.com/documentation/combine/passthroughsubject[PassthroughSubject]
 
-[quote]
-----
+[quote, Apple documentation on Combine]
+____
 A subject that broadcasts elements to downstream subscribers.
 Unlike CurrentValueSubject, a PassthroughSubject doesn’t have an initial value or a buffer of the most recently-published element.
-----
+____
 
 link:./PassthroughSubject.playground/Contents.swift[PassthroughSubject.playground/Contents.swift]
 
@@ -40,10 +40,10 @@ Described in
 
 * https://developer.apple.com/documentation/combine/currentvaluesubject[CurrentValueSubject]
 
-[quote]
-----
+[quote, Apple documentation on Combine]
+____
 Unlike PassthroughSubject, CurrentValueSubject maintains a buffer of the most recently published element.
-----
+____
 
 CurrentValueSubject has a state(initial value or updated value).
 

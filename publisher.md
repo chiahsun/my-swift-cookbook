@@ -24,9 +24,10 @@ Described in
 
 -   [Just](https://developer.apple.com/documentation/combine/just)
 
-<!-- -->
-
-    A publisher that emits an output to each subscriber just once, and then finishes.
+> A publisher that emits an output to each subscriber just once, and
+> then finishes.
+>
+> —  Apple documentation on Combine
 
 [Just.playground/Contents.swift](./Just.playground/Contents.swift)
 
@@ -50,10 +51,11 @@ Described in
 
 -   [PassthroughSubject](https://developer.apple.com/documentation/combine/passthroughsubject)
 
-<!-- -->
-
-    A subject that broadcasts elements to downstream subscribers.
-    Unlike CurrentValueSubject, a PassthroughSubject doesn’t have an initial value or a buffer of the most recently-published element.
+> A subject that broadcasts elements to downstream subscribers. Unlike
+> CurrentValueSubject, a PassthroughSubject doesn’t have an initial
+> value or a buffer of the most recently-published element.
+>
+> —  Apple documentation on Combine
 
 [PassthroughSubject.playground/Contents.swift](./PassthroughSubject.playground/Contents.swift)
 
@@ -77,9 +79,10 @@ Described in
 
 -   [CurrentValueSubject](https://developer.apple.com/documentation/combine/currentvaluesubject)
 
-<!-- -->
-
-    Unlike PassthroughSubject, CurrentValueSubject maintains a buffer of the most recently published element.
+> Unlike PassthroughSubject, CurrentValueSubject maintains a buffer of
+> the most recently published element.
+>
+> —  Apple documentation on Combine
 
 CurrentValueSubject has a state(initial value or updated value).
 

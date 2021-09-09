@@ -4,10 +4,10 @@ Described in
 
 * https://developer.apple.com/documentation/combine/just[Just]
 
-[quote]
-----
+[quote, Apple documentation on Combine]
+____
 A publisher that emits an output to each subscriber just once, and then finishes.
-----
+____
 
 link:./Just.playground/Contents.swift[Just.playground/Contents.swift]
 
